@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81F79F"
+    android:id="@+id/frameLayout"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="000"
+            android:id="@+id/scoreView"
+            android:gravity="center"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <view
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            class="jp.anddev68.procon26.gui.FieldView"
+            android:id="@+id/fieldView"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/horizontalScrollView"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/linearLayout"
+                android:gravity="center_horizontal"
+                android:showDividers="middle">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
